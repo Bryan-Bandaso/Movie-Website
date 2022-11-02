@@ -1,0 +1,544 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+}
+/* Navbar */
+header li,
+a,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10%;
+  background-color: #24252a;
+}
+
+.logo-header {
+  cursor: pointer;
+  width: 50px;
+  order: 3;
+  display: flex;
+}
+
+.logo-header i {
+  margin-right: 30px;
+  font-size: 30px;
+  color: white;
+}
+
+.logo-header i:hover {
+  color: darkgrey;
+}
+
+nav {
+  order: 1;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.menu li:nth-child(1) {
+  padding: 0 20px 0 0;
+}
+
+.menu li a {
+  transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover {
+  color: #00889a;
+}
+
+.cta {
+  order: 2;
+}
+
+.menu button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.menu button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+/* End Navbar */
+
+/* Home */
+
+.home-page {
+  background-image: url(/img/912868.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.home-page .home-text h1 {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.home-page .home-text .home-movie {
+  color: white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+
+.home-page .home-text h1 {
+  font-size: 50px;
+}
+
+.home-movie button {
+  padding: 9px 25px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-top: 10px;
+}
+
+.home-movie button:hover {
+  background-color: rgba(0, 136, 169, 0.8);
+}
+
+/* End Home */
+
+/* TV */
+
+.tv-page {
+  width: 100%;
+  height: 120vh;
+  background-color: black;
+  padding: 40px;
+}
+
+.button-tv {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.button-tv button {
+  padding: 9px 25px;
+  background-color: black;
+  color: white;
+  border-color: #00889a;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-top: 10px;
+  margin-left: 70px;
+  border-style: solid;
+}
+
+.button-tv button:hover {
+  color: white;
+  background-color: #00889a;
+}
+
+.text-tv {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tv-feature {
+  font-size: 25px;
+  color: red;
+  text-transform: uppercase;
+}
+
+.tv-show {
+  font-size: 60px;
+  color: white;
+}
+
+.cards {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cards-tv img {
+  width: 30vh;
+  margin-left: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+}
+
+.cards-tv p {
+  font-size: 15px;
+  color: white;
+}
+
+.more-tv {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.cards-tv button {
+  padding: 4px 25px;
+  background-color: rgb(53, 50, 50);
+  color: white;
+  border-color: #131a1b;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.cards-tv input {
+  background-color: black;
+  padding: 5px 90px 5px 7px;
+  border-style: solid;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.more {
+  margin-left: 40px;
+}
+
+.text-card {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.text-card h4 {
+  margin-bottom: 10px;
+}
+
+.text-card p {
+  color: grey;
+}
+
+.text-card button {
+  color: white;
+  background-color: black;
+  border-style: solid;
+  border-color: #00889a;
+  margin-top: 30px;
+  transition: all 0.3s ease 0s;
+}
+/* END TV */
+
+/* COMING SOON */
+
+.coming-soon {
+  width: 100%;
+  height: 130vh;
+  display: flex;
+  background-color: black;
+  padding: 40px;
+}
+
+.coming {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.coming-text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.coming-text h2 {
+  color: white;
+  font-size: 50px;
+  font-weight: 250;
+}
+.coming-text h3 {
+  color: white;
+}
+
+.coming-text p {
+  color: white;
+  line-height: 2;
+}
+
+.coming img {
+  width: 45vh;
+  margin-left: 25vh;
+  border-style: solid;
+  border-color: white;
+}
+
+.coming-text {
+  position: relative;
+  top: 0px;
+  margin-left: 20vh;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20vh 10vh 0;
+}
+
+.coming-text button {
+  margin-top: 30px;
+  padding: 9px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+.button-soon1 {
+  background-color: red;
+  border-style: none;
+}
+
+.button-soon2 {
+  background-color: black;
+  border-style: solid;
+  border-color: red;
+}
+
+.coming-text button:hover {
+  background-color: white;
+  color: black;
+}
+/* End COMING SOON */
+
+/* ALL Movie */
+
+.all-movie {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 40px;
+  background-color: black;
+}
+
+.movie {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-list-text {
+  display: flex;
+  flex-direction: column;
+  padding: 100px;
+  margin: 0 10vh 0 0vh;
+  border-style: solid;
+  border-style: solid;
+}
+
+.movie-list {
+  border-style: solid;
+  border-color: #3330e4;
+  padding: 20px 150px 60px 30px;
+  position: relative;
+  right: 5%;
+  z-index: -2;
+}
+
+.movie-table .movie-title {
+  font-size: 15px;
+  font-weight: 500;
+  color: white;
+  margin-top: 25px;
+}
+
+.movie-table p {
+  font-size: 10px;
+  color: #3330e4;
+  font-weight: bold;
+}
+
+.movie-list button {
+  position: absolute;
+  top: 95%;
+  right: 10%;
+  padding: 9px 10px;
+  color: white;
+  background-color: #3330e4;
+  transition: all 0.3s ease 0s;
+  font-size: 12px;
+}
+
+.movie-list button:hover {
+  background-color: #143f6b;
+  cursor: pointer;
+}
+
+.movie-list button i {
+  margin-right: 5px;
+}
+
+.movie img {
+  position: absolute;
+  right: 5%;
+  top: 353%;
+  z-index: -4;
+  width: 35%;
+}
+.movie-img {
+  position: absolute;
+  right: 15%;
+  top: 366%;
+  width: 60%;
+  z-index: -3;
+  background-color: black;
+  color: white;
+  border-color: none;
+  padding: 290px 0 300px 0px;
+}
+/* End ALL Movie */
+
+/* POSTER */
+
+.poster {
+  width: 100%;
+  height: 160vh;
+  display: flex;
+  background-color: black;
+  padding: 50px;
+}
+
+.poster-text {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  position: relative;
+  left: 15%;
+  top: 5%;
+}
+
+.image-poster .poster-1 {
+  position: relative;
+  left: 179%;
+  top: 10%;
+  width: 28vh;
+}
+
+.image-poster .poster-2 {
+  position: relative;
+  left: 165%;
+  top: 20%;
+  width: 40vh;
+}
+
+.image-poster .poster-3 {
+  position: relative;
+  right: 64%;
+  top: 50%;
+  width: 28vh;
+}
+
+.image-poster .poster-4 {
+  position: relative;
+  right: 270%;
+  top: 50%;
+  width: 40vh;
+}
+.text-1 {
+  font-size: 15px;
+  color: red;
+  text-transform: uppercase;
+}
+
+.text-2 {
+  font-size: 55px;
+  color: white;
+}
+
+/* .image-poster img {
+  width: 50px;
+} */
+
+.poster-text button {
+  padding: 9px 25px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: all 0.3s ease 0s;
+}
+
+.poster-text button i {
+  margin-left: 5px;
+}
+
+.poster-text button:hover {
+  background-color: #143f6b;
+}
+
+/* END POSTER */
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  height: 70vh;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/img/pexels-kaique-rocha-65437.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-button button {
+  background-color: #3330e4;
+  color: white;
+  padding: 15px 25px;
+  border-style: none;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  left: 40%;
+  transition: all 0.3s ease 0s;
+}
+
+.footer-button button i {
+  margin-right: 5px;
+}
+
+.text-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.text-p {
+  margin-left: 85px;
+  position: relative;
+  bottom: 13%;
+}
+
+/* END FOOTER */
